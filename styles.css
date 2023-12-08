@@ -1,0 +1,118 @@
+body {
+    background-color: silver;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display:flex;
+    background: linear-gradient(silver, grey);
+    border: solid 1pt rgb(56, 56, 56);
+    justify-content: space-evenly;
+    height: 55px;
+    border-radius: 0px 0px 25px 0px;
+}
+
+.webtop {
+    display:flex;
+    background: linear-gradient(grey, silver);
+    border: solid  1pt rgb(56, 56, 56);
+    height: 60px;
+}
+
+.title {
+    font-size: 25px;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    color: blue;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+#search {
+    justify-content: center;
+    width: 80%;
+}
+
+.navoptions {
+    margin-top: 15px;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(140, 122, 194), rgb(202, 183, 183));
+    border: solid 1pt rgb(110, 106, 106);
+    border-radius: 25px 25px 25px 25px;
+    margin: 0 20% 0 20%;
+    padding: 0% 5% 5% 5%;
+}
+
+#reviewbox {
+    width: 60%;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 70px;
+}
+
+#submitreview {
+    width: 10%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: grey;
+    margin-top: 5%;
+}
+
+.consoleselection {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border: solid 2pt black;
+    border-collapse: collapse;
+    margin: 5% 0 0 0;
+    background: linear-gradient(grey, silver);
+}
+
+th {
+    border: solid 2pt black;
+}
+td {
+    border: solid 2pt;
+}
+
+.consolepage {
+    background-image: url(images/background.jfif);
+    background-size: cover;
+}
+
+.checkout {
+    display:flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 16%;
+}
+
+.checkoutimage {
+    background: linear-gradient(silver, rgb(126, 109, 158));
+    border: 1px solid grey;
+    padding: 20px 20px 20px 20px;
+}
+
+.checkoutbox {
+    background: linear-gradient(silver, rgb(126, 109, 158));
+    border: 1px solid grey;
+    margin: 0 20px 0 20px;
+    padding: 0 20px 0 20px;
+}
+
+#checkbutton {
+    margin-top: 55%;
+    width: 180px;
+}
