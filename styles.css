@@ -24,10 +24,14 @@ body {
     font-size: 25px;
     margin-right: 20px;
     margin-left: 10px;
-    margin-bottom: 30px;
+    margin-top: 15px;
     color: blue;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
+}
+
+a {
+    text-decoration: none;
 }
 
 #search {
@@ -37,6 +41,20 @@ body {
 
 .navoptions {
     margin-top: 15px;
+}
+
+.navoptions:link {
+    color: blue;
+}
+
+.navoptions:visited {
+    color: white;
+    transition: 3s;
+}
+
+.navoptions:hover, .footlink:hover {
+    color: red;
+    transition: 1s;
 }
 
 .reviews {
@@ -88,7 +106,7 @@ td {
 }
 
 .consolepage {
-    background-image: url(images/background.jfif);
+    background-image: url(images/background.jpeg);
     background-size: cover;
 }
 
@@ -115,4 +133,61 @@ td {
 #checkbutton {
     margin-top: 55%;
     width: 180px;
+}
+
+.footlink {
+    color: blue;
+    transition: 3s;
+}
+
+.rectangle {
+    display:flex;
+    margin-left: 10%;
+    width: 480px;
+    height: 240px;
+    border: solid rgb(255, 0, 0);
+    transition: width 3s, height 3s;
+}
+
+@keyframes borderbow {
+    0% {
+        border: solid red;
+    }
+    12.5% {
+        border: solid orange;
+    }
+    25% {
+        border: solid yellow;
+    }
+    37.5% {
+        border: solid yellowgreen;
+    }
+    50% {
+        border: solid green;
+    }
+    62.5% {
+        border: solid blue;
+    }
+    75% {
+        border: solid purple;
+    }
+    87.5% {
+        border: solid indigo;
+    }
+    100% {
+        border: solid red;
+    }
+}
+
+.rectangle:hover {
+    animation: borderbow 5s linear infinite;
+    width: 900px;
+    height: 450px;
+}
+
+.descnprice, .thankyou {
+    border: solid 1pt grey;
+    border-radius: 20px 20px 20px 20px;
+    background: linear-gradient(rgb(126, 109, 158), silver);
+    padding: 0 25px 0 25px;
 }
